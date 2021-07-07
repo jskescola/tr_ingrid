@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset= "UTF-8"> 
+  	    <meta name="viewport" content="width=device-width">
+        <title>Pedido - Pizzaria da Família</title>
+
+	    <link rel="stylesheet" href="reset.css">
+	    <link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<!--Cabeçalho-->
+		<header>
+			<div class="capa">
+				<nav>
+					<ul>
+						<li><a href="pizzaria.html">Início</a></li>
+						<li><a href="sabores.html">Sabores</a></li>
+						<li><a href="contato.html" class="laranja">Faça seu pedido</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!--<script>
+			function envia(frase) {
+				if()
+				document.write("Obrigado pela preferência! Seu pedido chegará em breve.");
+			}
+		</script> -->
+
+		<!--Conteúdo principal-->
+		<main class="form">
+			<form>
+				<label for="nome">Nome e Sobrenome</label>
+				<input type="text" id="nome" class="formulario" required placeholder="seu nome e sobrenome">
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="formulario" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="formulario" required placeholder="(XX)XXXXX-XXXX">
+
+				<label for="endereço">Endereço</label>
+				<input type="text" id="endereço" class="formulario" required placeholder="endereço da entrega">
+
+				<label for="pedido">Pedido</label>
+				<textarea cols="40" rows="8" id="pedido" class="formulario" required placeholder="O que deseja pedir?"></textarea>
+
+				<label for="observações">Observações</label>
+				<textarea cols="40" rows="8" id="observações" class="formulario" placeholder="Possui alguma exigência particular?"></textarea>
+
+				<input type="submit" value="Enviar informações" class="enviar" onclick="envia()">
+			</form>
+		</main>
+	</body>
+
+	<!--Rodapé-->
+	<footer>
+		<p class="rodape">Endereço: Rua dos Sabores - Nº 162</p>
+		<p class="rodape">Telefone: (99) 99999-9999</p>
+		<p class="copyright">&copy; Copyright Pizzaria da Família - 2021
+	</footer>
+</html>
